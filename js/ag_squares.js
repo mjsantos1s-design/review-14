@@ -23,6 +23,15 @@ function playPokerSquares() {
    var gameScore = document.getElementById("gameScore");
    var gameResult = document.getElementById("gameResult");
    
+   startButton.onclick = function() {
+   squareGame.gameTotal = 0;
+   gameScore.value = "";
+   gameResult.textContent = "";
+      for () {
+
+      }
+
+   }
 }
                                
 
