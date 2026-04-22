@@ -26,10 +26,25 @@ function playPokerSquares() {
    startButton.onclick = function() {
    squareGame.gameTotal = 0;
    gameScore.value = "";
-   gameResult.textContent = "";
-      for () {
-
+   gameResult.textContent = ""; 
+      for (var i = 0; i) {
+ colSumCells rowSumCells = " "
       }
+
+   for (var i = 0; i < cardImages.length; i++) {
+      cardImages[i].src = myHand.cards[i].cardImage();
+      // Event handler for each card image
+      cardImages[i].index = 1;
+      cardImages[i].onclick = function(e) {
+         if (e.target.discard !== true) {
+            e.target.discard = true;
+            e.target.src = "./png/ag_trans.png"
+         } else {
+            e.target.discard = false;
+            e.target.src = myHand.cards[e.target.index].cardImage();
+         }
+      };
+   }
 
    }
 }
